@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    padding: 0;
+    margin: 0;
+}
+
+/* CONTAINER UTAMA */
+.app-detail {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigasi Atas / Tombol Kembali */
+.detail-back-nav {
+    margin-bottom: 20px;
+}
+
+.btn-back-circle {
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.btn-back-circle:hover {
+    transform: translateX(-3px);
+}
+
+/* GRID UTAMA - selalu 2 kolom */
+.detail-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Bagian Gambar Kiri */
+.detail-image-box {
+    width: 45%;
+    flex-shrink: 0;
+    position: sticky;
+    top: 20px;
+}
+
+.detail-image-box img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Bagian Informasi Kanan */
+.detail-content {
+    width: 55%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+/* Judul & Kategori */
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.detail-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.badge-kategori {
+    background-color: #e2f7eb;
+    color: #10b981;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.detail-location {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* Card Harga & Ulasan */
+.price-card {
+    background-color: #e6f9ee;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.price-label {
+    font-size: 12px;
+    color: #065f46;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.price-value {
+    font-size: 22px;
+    color: #047857;
+    font-weight: 700;
+}
+
+.price-per {
+    font-size: 14px;
+    font-weight: 400;
+    color: #065f46;
+}
+
+.review-status {
+    font-size: 14px;
+    color: #047857;
+    font-weight: 500;
+}
+
+/* Tab Menu */
+.detail-tabs {
+    display: flex;
+    border-bottom: 2px solid #f1f5f9;
+    margin-bottom: 20px;
+}
+
+.tab-item {
+    padding: 0 10px 12px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #94a3b8;
+    margin-right: 30px;
+}
+
+.tab-item.active {
+    color: #047857;
+    border-bottom: 3px solid #047857;
+    margin-bottom: -2px;
+}
+
+/* Isi Deskripsi */
+.detail-description {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.sub-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+/* Grid Fasilitas */
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.facility {
+    font-size: 13px;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.facility i {
+    color: #047857;
+}
+
+/* Tombol Pesan Tiket */
+.btn-pesan {
+    width: 100%;
+    background-color: #047857;
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.btn-pesan:hover {
+    background-color: #065f46;
+}
+
+/* RESPONSIVE - untuk layar kecil tetap 1 kolom */
+@media (max-width: 767px) {
+    .detail-grid {
+        flex-direction: column;
+    }
+
+    .detail-image-box {
+        width: 100%;
+        position: static;
+    }
+
+    .detail-image-box img {
+        height: 250px;
+    }
+
+    .detail-content {
+        width: 100%;
+    }
+}
+a.btn-pesan {
+    text-decoration: none;
+}

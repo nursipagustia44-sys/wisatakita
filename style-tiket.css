@@ -1,0 +1,192 @@
+/* ── Ticket App ───────────────────────────── */
+.ticket-app {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    background: #f0f2f5;
+    min-height: 100vh;
+}
+/* Header */
+.ticket-header {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.ticket-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 16px;
+}
+
+/* Filter */
+.ticket-filter {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1.5px solid #ddd;
+    background: #fff;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    border-color: #1a7a52;
+    color: #1a7a52;
+}
+
+.filter-btn.active {
+    background: #1a7a52;
+    border-color: #1a7a52;
+    color: #fff;
+}
+
+/* Card */
+.ticket-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.ticket-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.ticket-top h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 4px;
+}
+
+.ticket-id {
+    font-size: 13px;
+    color: #888;
+}
+
+/* Badge */
+.badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.badge-aktif      { background: #e1f5ee; color: #0f6e56; }
+.badge-selesai    { background: #f1f0ea; color: #5f5e5a; }
+.badge-dibatalkan { background: #fcebeb; color: #a32d2d; }
+
+/* Detail */
+.ticket-card hr {
+    border: none;
+    border-top: 1px solid #f0f0f0;
+    margin: 14px 0;
+}
+
+.ticket-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detail-item p {
+    font-size: 12px;
+    color: #888;
+    margin: 0 0 2px;
+}
+
+.detail-item h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+/* Action */
+.ticket-action {
+    margin-top: 4px;
+}
+
+.btn-detail {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 11px;
+    border-radius: 10px;
+    background: #f5f5f5;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-detail:hover {
+    background: #e8e8e8;
+}
+
+/* Empty State */
+.empty-ticket {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.empty-icon {
+    font-size: 52px;
+    color: #ccc;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.empty-ticket h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 8px;
+}
+
+.empty-ticket p {
+    font-size: 14px;
+    color: #888;
+    margin: 0 0 20px;
+}
+
+.btn-pesan {
+    display: inline-block;
+    padding: 11px 28px;
+    background: #1a7a52;
+    color: #fff;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-pesan:hover {
+    background: #155f40;
+}
+.ticket-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap:20px;
+}
